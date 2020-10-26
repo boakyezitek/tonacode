@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Banner() {
+
     return (
         <>
             <section className="wave-section">
@@ -8,11 +10,11 @@ function Banner() {
                     <div className="container"><a className="navbar-brand" href="#" style={{ fontFamily: "'Mr De Haviland', cursive", color: "rgb(255,255,255)", fontSize: "41px" }}>Tonacode...</a><button data-toggle="collapse" className="navbar-toggler" data-target="#navcol-1"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
                         <div
                             className="collapse navbar-collapse" id="navcol-1">
-                            <ul className="nav navbar-nav ml-auto">
-                                <li className="nav-item"><a className="nav-link active" href="index.html">Home</a></li>
-                                <li className="nav-item"><a className="nav-link" href="portfolio.html">Portfolio</a></li>
-                                <li className="nav-item"><a className="nav-link" href="about.html">About</a></li>
-                                <li className="nav-item"><a className="nav-link btn-sm btn-primary" href="contact.html" style={{ background: "#5a09dd" }}>Contact</a></li>
+                            <ul class="nav navbar-nav ml-auto">
+                                <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/portfolio">Portfolio</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
+                                <li className="nav-item"><Link className="nav-link btn-sm btn-primary" to="/contact" style={{ background: "#5a09dd" }}>Contact</Link></li>
                             </ul>
                         </div>
                     </div>
