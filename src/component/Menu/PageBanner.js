@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import AmazonData from '../Portfolio/BannerData/AmazonData';
 
 function PageBanner({match}) {
     const path = match?.path;
@@ -37,6 +38,10 @@ function PageBanner({match}) {
                             </div>
                         </div>
                     </div>
+                ) : ""}
+
+                {path === "/portfolio/amazon" ? (
+                   <AmazonData />
                 ) : ""}
                 <div className="wave wave-1"></div>
                 <div className="wave wave-2"></div>
